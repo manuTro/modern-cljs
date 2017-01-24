@@ -14,7 +14,7 @@ corresponding section of its [README][3].
 
 Test the installation by issuing the `boot -h` command at the
 terminal. Then submit the `boot -u` command to get the latest `boot`
-updates.0
+updates.
 
 > NOTE 1: I strongly suggest to use Java 8. If you're using Java 7, it
 > might be worth mentioning
@@ -24,7 +24,7 @@ updates.0
 
 A minimum CLJS web project is composed of 3 files:
 
-* an html page; *
+* an html page; 
 * a CLJS source code;
 * a `boot` build file to compile CLJS source code.
 
