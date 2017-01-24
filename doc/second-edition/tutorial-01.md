@@ -10,7 +10,7 @@ computer.
 
 To install `java` follow the [instructions][3] for your operating
 system. To install `boot` follow the very easy instructions in the
-corresponding section of its [README][3].
+corresponding section of its [README][4].
 
 Test the installation by issuing the `boot -h` command at the
 terminal. Then submit the `boot -u` command to get the latest `boot`
