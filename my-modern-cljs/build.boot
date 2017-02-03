@@ -23,12 +23,21 @@
                   [javax.servlet/servlet-api "2.5"]
                   [org.clojars.magomimmo/valip "0.4.0-SNAPSHOT"]
                   [enlive "1.1.6"]
+                  [adzerk/boot-test "1.0.7"]
+                  [crisptrutski/boot-cljs-test "0.2.1-SNAPSHOT"]
                   ])
 
                   (require '[adzerk.boot-cljs :refer [cljs]]
                            '[pandeiro.boot-http :refer [serve]]
                            '[adzerk.boot-reload :refer [reload]]
-                           '[adzerk.boot-cljs-repl :refer [cljs-repl start-repl]])
+                           '[adzerk.boot-cljs-repl :refer [cljs-repl start-repl]]
+                           '[adzerk.boot-test :refer [test]]
+                           '[crisptrutski.boot-cljs-test :refer [test-cljs]])
+(deftask testing ;;only for clj
+"Add test/cljc for CLJ/CLJS testing purpose"
+[]
+(set-env! :source-paths #(conj % "test/cljc"))
+identity)
 
 (deftask dev
   "Launch immediate feedback dev environment"
