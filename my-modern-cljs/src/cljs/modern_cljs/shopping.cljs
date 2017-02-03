@@ -32,12 +32,12 @@
        (listen! (by-id "calc")
         :click
         (fn [evt] (calculate evt)))
-         (listen! (by-id "calc")
-            :mouseover
-            (fn []
-              (append! (by-id "shoppingForm")
-                (html [:div.help "Click to calculate"]))))
-                  (listen! (by-id "calc")
-                  :mouseout
-                    (fn []
-                      (destroy! (by-class "help"))))))
+       (listen! (by-id "calc")
+          :mouseover
+          (fn []
+            (append! (by-id "shoppingForm")
+              (html [:div.help "Click to calculate"]))))
+        (listen! (by-id "calc")
+        :mouseout
+          (fn []
+            (destroy! (by-class "help"))))))

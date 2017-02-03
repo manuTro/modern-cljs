@@ -24,9 +24,13 @@ goog.addDependency("../valip/predicates.js", ['valip.predicates'], ['goog.Uri', 
 goog.addDependency("../modern_cljs/login/validators.js", ['modern_cljs.login.validators'], ['valip.core', 'valip.predicates', 'cljs.core']);
 goog.addDependency("../modern_cljs/login.js", ['modern_cljs.login'], ['domina.core', 'hiccups.runtime', 'shoreleave.remotes.http_rpc', 'cljs.core', 'domina.events', 'modern_cljs.login.validators']);
 goog.addDependency("../modern_cljs/shopping.js", ['modern_cljs.shopping'], ['domina.core', 'hiccups.runtime', 'shoreleave.remotes.http_rpc', 'cljs.core', 'domina.events']);
+goog.addDependency("../modern_cljs/shopping/validators.js", ['modern_cljs.shopping.validators'], ['valip.core', 'valip.predicates', 'cljs.core']);
 goog.addDependency("../cljs/repl.js", ['cljs.repl'], ['cljs.core']);
 goog.addDependency("../clojure/browser/repl.js", ['clojure.browser.repl'], ['goog.dom', 'goog.userAgent.product', 'cljs.core', 'goog.object', 'clojure.browser.net', 'cljs.repl', 'goog.array', 'clojure.browser.event']);
 goog.addDependency("../weasel/impls/websocket.js", ['weasel.impls.websocket'], ['cljs.core', 'clojure.browser.net', 'goog.net.WebSocket', 'clojure.browser.event']);
 goog.addDependency("../weasel/repl.js", ['weasel.repl'], ['goog.dom', 'clojure.browser.repl', 'weasel.impls.websocket', 'cljs.core', 'clojure.browser.net', 'cljs.reader', 'clojure.browser.event']);
 goog.addDependency("../adzerk/boot_cljs_repl.js", ['adzerk.boot_cljs_repl'], ['weasel.repl', 'cljs.core']);
-goog.addDependency("../boot/cljs/main6649.js", ['boot.cljs.main6649'], ['adzerk.boot_reload', 'modern_cljs.login', 'cljs.core', 'modern_cljs.shopping', 'adzerk.boot_cljs_repl', 'modern_cljs.login.validators']);
+goog.addDependency("../cljs/pprint.js", ['cljs.pprint'], ['goog.string', 'cljs.core', 'goog.string.StringBuffer', 'clojure.string']);
+goog.addDependency("../cljs/test.js", ['cljs.test'], ['cljs.core', 'cljs.pprint', 'clojure.string']);
+goog.addDependency("../modern_cljs/shopping/validators_test.js", ['modern_cljs.shopping.validators_test'], ['cljs.core', 'modern_cljs.shopping.validators', 'cljs.test']);
+goog.addDependency("../boot/cljs/main6649.js", ['boot.cljs.main6649'], ['adzerk.boot_reload', 'modern_cljs.login', 'cljs.core', 'modern_cljs.shopping', 'modern_cljs.shopping.validators', 'adzerk.boot_cljs_repl', 'modern_cljs.shopping.validators_test', 'modern_cljs.login.validators']);
