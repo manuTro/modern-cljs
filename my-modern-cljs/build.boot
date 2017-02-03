@@ -34,7 +34,7 @@
   "Launch immediate feedback dev environment"
   []
   (comp
-   (serve :handler 'modern-cljs.remotes/app            ;; ring hanlder
+   (serve :handler 'modern-cljs.core/app            ;; ring hanlder
           :resource-root "target"                      ;; root classpath
           :reload true)                                ;; reload ns
    (watch)

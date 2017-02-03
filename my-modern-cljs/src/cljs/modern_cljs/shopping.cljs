@@ -1,16 +1,9 @@
 (ns modern-cljs.shopping
-  (:require [domina.core :refer [append!
-                                 by-class
-                                 by-id
-                                 destroy!
-                                 set-value!
-                                 value]]
+  (:require-macros [hiccups.core :refer [html]])
+  (:require [domina.core :refer [by-id value by-class set-value! append! destroy!]]
             [domina.events :refer [listen! prevent-default]]
-            [hiccups.runtime]
-            [shoreleave.remotes.http-rpc :refer [remote-callback]]
-            [cljs.reader :refer [read-string]])
-  (:require-macros [hiccups.core :refer [html]]
-                   [shoreleave.remotes.macros :as macros]))
+            [hiccups.runtime :as hiccupsrt]
+            [shoreleave.remotes.http-rpc :refer [remote-callback]]))
 ; (defn calculate []
 ;   (let
 ;     [quantity (value (by-id "quantity"))
@@ -23,10 +16,10 @@
 ;       ))
 ; calculate function after creating server side
 (defn calculate [evt]
-  (let [quantity (read-string (value (by-id "quantity")))
-        price (read-string (value (by-id "price")))
-        tax (read-string (value (by-id "tax")))
-        discount (read-string (value (by-id "discount")))]
+  (let [quantity   (value (by-id "quantity"))
+        price      (value (by-id "price"))
+        tax        (value (by-id "tax"))
+        discount   (value (by-id "discount")) ]
     (remote-callback :calculate
                      [quantity price tax discount]
                      #(set-value! (by-id "total") (.toFixed % 2)))
