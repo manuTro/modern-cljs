@@ -26,11 +26,11 @@ hiccups.runtime.xml_mode_QMARK_ = (function hiccups$runtime$xml_mode_QMARK_(){
 return cljs.core._EQ_.call(null,hiccups.runtime._STAR_html_mode_STAR_,new cljs.core.Keyword(null,"xml","xml",-1170142052));
 });
 hiccups.runtime.in_mode = (function hiccups$runtime$in_mode(mode,f){
-var _STAR_html_mode_STAR_7026 = hiccups.runtime._STAR_html_mode_STAR_;
+var _STAR_html_mode_STAR_8447 = hiccups.runtime._STAR_html_mode_STAR_;
 hiccups.runtime._STAR_html_mode_STAR_ = mode;
 
 try{return f.call(null);
-}finally {hiccups.runtime._STAR_html_mode_STAR_ = _STAR_html_mode_STAR_7026;
+}finally {hiccups.runtime._STAR_html_mode_STAR_ = _STAR_html_mode_STAR_8447;
 }});
 /**
  * Change special characters into HTML character entities.
@@ -49,10 +49,10 @@ return ">";
 hiccups.runtime.xml_attribute = (function hiccups$runtime$xml_attribute(name,value){
 return [cljs.core.str(" "),cljs.core.str(hiccups.runtime.as_str.call(null,name)),cljs.core.str("=\""),cljs.core.str(hiccups.runtime.escape_html.call(null,value)),cljs.core.str("\"")].join('');
 });
-hiccups.runtime.render_attribute = (function hiccups$runtime$render_attribute(p__7027){
-var vec__7029 = p__7027;
-var name = cljs.core.nth.call(null,vec__7029,(0),null);
-var value = cljs.core.nth.call(null,vec__7029,(1),null);
+hiccups.runtime.render_attribute = (function hiccups$runtime$render_attribute(p__8448){
+var vec__8450 = p__8448;
+var name = cljs.core.nth.call(null,vec__8450,(0),null);
+var value = cljs.core.nth.call(null,vec__8450,(1),null);
 if(value === true){
 if(cljs.core.truth_(hiccups.runtime.xml_mode_QMARK_.call(null))){
 return hiccups.runtime.xml_attribute.call(null,name,name);
@@ -74,20 +74,20 @@ return cljs.core.apply.call(null,cljs.core.str,cljs.core.sort.call(null,cljs.cor
 /**
  * Ensure a tag vector is of the form [tag-name attrs content].
  */
-hiccups.runtime.normalize_element = (function hiccups$runtime$normalize_element(p__7030){
-var vec__7033 = p__7030;
-var tag = cljs.core.nth.call(null,vec__7033,(0),null);
-var content = cljs.core.nthnext.call(null,vec__7033,(1));
+hiccups.runtime.normalize_element = (function hiccups$runtime$normalize_element(p__8451){
+var vec__8454 = p__8451;
+var tag = cljs.core.nth.call(null,vec__8454,(0),null);
+var content = cljs.core.nthnext.call(null,vec__8454,(1));
 if(!(((tag instanceof cljs.core.Keyword)) || ((tag instanceof cljs.core.Symbol)) || (typeof tag === 'string'))){
 throw [cljs.core.str(tag),cljs.core.str(" is not a valid tag name")].join('');
 } else {
 }
 
-var vec__7034 = cljs.core.re_matches.call(null,hiccups.runtime.re_tag,hiccups.runtime.as_str.call(null,tag));
-var _ = cljs.core.nth.call(null,vec__7034,(0),null);
-var tag__$1 = cljs.core.nth.call(null,vec__7034,(1),null);
-var id = cljs.core.nth.call(null,vec__7034,(2),null);
-var class$ = cljs.core.nth.call(null,vec__7034,(3),null);
+var vec__8455 = cljs.core.re_matches.call(null,hiccups.runtime.re_tag,hiccups.runtime.as_str.call(null,tag));
+var _ = cljs.core.nth.call(null,vec__8455,(0),null);
+var tag__$1 = cljs.core.nth.call(null,vec__8455,(1),null);
+var id = cljs.core.nth.call(null,vec__8455,(2),null);
+var class$ = cljs.core.nth.call(null,vec__8455,(3),null);
 var tag_attrs = new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),id,new cljs.core.Keyword(null,"class","class",-2030961996),(cljs.core.truth_(class$)?clojure.string.replace.call(null,class$,"."," "):null)], null);
 var map_attrs = cljs.core.first.call(null,content);
 if(cljs.core.map_QMARK_.call(null,map_attrs)){
@@ -101,10 +101,10 @@ hiccups.runtime.render_html;
  * Render a tag vector as a HTML element.
  */
 hiccups.runtime.render_element = (function hiccups$runtime$render_element(element){
-var vec__7036 = hiccups.runtime.normalize_element.call(null,element);
-var tag = cljs.core.nth.call(null,vec__7036,(0),null);
-var attrs = cljs.core.nth.call(null,vec__7036,(1),null);
-var content = cljs.core.nth.call(null,vec__7036,(2),null);
+var vec__8457 = hiccups.runtime.normalize_element.call(null,element);
+var tag = cljs.core.nth.call(null,vec__8457,(0),null);
+var attrs = cljs.core.nth.call(null,vec__8457,(1),null);
+var content = cljs.core.nth.call(null,vec__8457,(2),null);
 if(cljs.core.truth_((function (){var or__4989__auto__ = content;
 if(cljs.core.truth_(or__4989__auto__)){
 return or__4989__auto__;

@@ -39,6 +39,22 @@
 (set-env! :source-paths #(conj % "test/cljc"))
 identity)
 
+(deftask tdd
+  []
+  (comp
+   (serve :handler 'modern-cljs.core/app
+          :resource-root "target"
+          :reload true)
+   (testing)
+   (watch)
+   (reload)
+   (cljs-repl)
+   (test-cljs :out-file "main.js"
+              :js-env :phantom
+              :namespaces '#{modern-cljs.shopping.validators-test}
+              :update-fs? true)
+   (test :namespaces '#{modern-cljs.shopping.validators-test})
+   (target :dir #{"target"})))
 (deftask dev
   "Launch immediate feedback dev environment"
   []
