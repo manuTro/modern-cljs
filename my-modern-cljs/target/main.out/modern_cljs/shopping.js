@@ -11,8 +11,8 @@ var price = domina.core.value.call(null,domina.core.by_id.call(null,"price"));
 var tax = domina.core.value.call(null,domina.core.by_id.call(null,"tax"));
 var discount = domina.core.value.call(null,domina.core.by_id.call(null,"discount"));
 shoreleave.remotes.http_rpc.remote_callback.call(null,new cljs.core.Keyword(null,"calculate","calculate",-1224644403),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [quantity,price,tax,discount], null),((function (quantity,price,tax,discount){
-return (function (p1__9140_SHARP_){
-return domina.core.set_value_BANG_.call(null,domina.core.by_id.call(null,"total"),p1__9140_SHARP_.toFixed((2)));
+return (function (p1__9886_SHARP_){
+return domina.core.set_value_BANG_.call(null,domina.core.by_id.call(null,"total"),p1__9886_SHARP_.toFixed((2)));
 });})(quantity,price,tax,discount))
 );
 

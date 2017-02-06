@@ -7,8 +7,8 @@ goog.require('hiccups.runtime');
 goog.require('modern_cljs.login.validators');
 goog.require('shoreleave.remotes.http_rpc');
 modern_cljs.login.validate_email_domain = (function modern_cljs$login$validate_email_domain(email){
-return shoreleave.remotes.http_rpc.remote_callback.call(null,new cljs.core.Keyword(null,"email-domain-errors","email-domain-errors",-581599182),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [email], null),(function (p1__7527_SHARP_){
-if(cljs.core.truth_(p1__7527_SHARP_)){
+return shoreleave.remotes.http_rpc.remote_callback.call(null,new cljs.core.Keyword(null,"email-domain-errors","email-domain-errors",-581599182),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [email], null),(function (p1__8959_SHARP_){
+if(cljs.core.truth_(p1__8959_SHARP_)){
 domina.core.prepend_BANG_.call(null,domina.core.by_id.call(null,"loginForm"),[cljs.core.str("<div class=\"help email\">The email domain doesn't exist.</div>")].join(''));
 
 return false;
@@ -23,11 +23,11 @@ domina.core.destroy_BANG_.call(null,domina.core.by_class.call(null,"email"));
 var temp__4423__auto__ = new cljs.core.Keyword(null,"email","email",1415816706).cljs$core$IFn$_invoke$arity$1(modern_cljs.login.validators.user_credential_errors.call(null,domina.core.value.call(null,email),null));
 if(cljs.core.truth_(temp__4423__auto__)){
 var errors = temp__4423__auto__;
-domina.core.prepend_BANG_.call(null,domina.core.by_id.call(null,"loginForm"),[cljs.core.str((function (){var attrs7533 = cljs.core.first.call(null,errors);
-if(cljs.core.map_QMARK_.call(null,attrs7533)){
-return [cljs.core.str("<div"),cljs.core.str(hiccups.runtime.render_attr_map.call(null,cljs.core.merge.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),null,new cljs.core.Keyword(null,"class","class",-2030961996),"help email"], null),attrs7533))),cljs.core.str(">"),cljs.core.str("</div>")].join('');
+domina.core.prepend_BANG_.call(null,domina.core.by_id.call(null,"loginForm"),[cljs.core.str((function (){var attrs8965 = cljs.core.first.call(null,errors);
+if(cljs.core.map_QMARK_.call(null,attrs8965)){
+return [cljs.core.str("<div"),cljs.core.str(hiccups.runtime.render_attr_map.call(null,cljs.core.merge.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),null,new cljs.core.Keyword(null,"class","class",-2030961996),"help email"], null),attrs8965))),cljs.core.str(">"),cljs.core.str("</div>")].join('');
 } else {
-return [cljs.core.str("<div class=\"help email\">"),cljs.core.str(hiccups.runtime.render_html.call(null,attrs7533)),cljs.core.str("</div>")].join('');
+return [cljs.core.str("<div class=\"help email\">"),cljs.core.str(hiccups.runtime.render_html.call(null,attrs8965)),cljs.core.str("</div>")].join('');
 }
 })())].join(''));
 
@@ -42,11 +42,11 @@ domina.core.destroy_BANG_.call(null,domina.core.by_class.call(null,"password"));
 var temp__4423__auto__ = new cljs.core.Keyword(null,"password","password",417022471).cljs$core$IFn$_invoke$arity$1(modern_cljs.login.validators.user_credential_errors.call(null,null,domina.core.value.call(null,password)));
 if(cljs.core.truth_(temp__4423__auto__)){
 var errors = temp__4423__auto__;
-domina.core.append_BANG_.call(null,domina.core.by_id.call(null,"loginForm"),[cljs.core.str((function (){var attrs7535 = cljs.core.first.call(null,errors);
-if(cljs.core.map_QMARK_.call(null,attrs7535)){
-return [cljs.core.str("<div"),cljs.core.str(hiccups.runtime.render_attr_map.call(null,cljs.core.merge.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),null,new cljs.core.Keyword(null,"class","class",-2030961996),"help password"], null),attrs7535))),cljs.core.str(">"),cljs.core.str("</div>")].join('');
+domina.core.append_BANG_.call(null,domina.core.by_id.call(null,"loginForm"),[cljs.core.str((function (){var attrs8967 = cljs.core.first.call(null,errors);
+if(cljs.core.map_QMARK_.call(null,attrs8967)){
+return [cljs.core.str("<div"),cljs.core.str(hiccups.runtime.render_attr_map.call(null,cljs.core.merge.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),null,new cljs.core.Keyword(null,"class","class",-2030961996),"help password"], null),attrs8967))),cljs.core.str(">"),cljs.core.str("</div>")].join('');
 } else {
-return [cljs.core.str("<div class=\"help password\">"),cljs.core.str(hiccups.runtime.render_html.call(null,attrs7535)),cljs.core.str("</div>")].join('');
+return [cljs.core.str("<div class=\"help password\">"),cljs.core.str(hiccups.runtime.render_html.call(null,attrs8967)),cljs.core.str("</div>")].join('');
 }
 })())].join(''));
 
@@ -58,10 +58,10 @@ return true;
 modern_cljs.login.validate_form = (function modern_cljs$login$validate_form(evt,email,password){
 var temp__4423__auto__ = modern_cljs.login.validators.user_credential_errors.call(null,domina.core.value.call(null,email),domina.core.value.call(null,password));
 if(cljs.core.truth_(temp__4423__auto__)){
-var map__7540 = temp__4423__auto__;
-var map__7540__$1 = ((((!((map__7540 == null)))?((((map__7540.cljs$lang$protocol_mask$partition0$ & (64))) || (map__7540.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__7540):map__7540);
-var e_errs = cljs.core.get.call(null,map__7540__$1,new cljs.core.Keyword(null,"email","email",1415816706));
-var p_errs = cljs.core.get.call(null,map__7540__$1,new cljs.core.Keyword(null,"password","password",417022471));
+var map__8972 = temp__4423__auto__;
+var map__8972__$1 = ((((!((map__8972 == null)))?((((map__8972.cljs$lang$protocol_mask$partition0$ & (64))) || (map__8972.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__8972):map__8972);
+var e_errs = cljs.core.get.call(null,map__8972__$1,new cljs.core.Keyword(null,"email","email",1415816706));
+var p_errs = cljs.core.get.call(null,map__8972__$1,new cljs.core.Keyword(null,"password","password",417022471));
 if(cljs.core.truth_((function (){var or__4989__auto__ = e_errs;
 if(cljs.core.truth_(or__4989__auto__)){
 return or__4989__auto__;

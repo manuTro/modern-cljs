@@ -38,7 +38,7 @@ var process_exit = goog.object.get(process,"exit");
 return process_exit.call(null,(cljs.core.truth_(success_QMARK_)?(0):(1)));
 } else {
 try{return doo.runner._STAR_exit_fn_STAR_.call(null,success_QMARK_);
-}catch (e8962){var e = e8962;
+}catch (e7754){var e = e7754;
 cljs.core.println.call(null,"WARNING: doo's exit function was not properly set");
 
 return cljs.core.println.call(null,e);
@@ -49,7 +49,7 @@ return doo.runner.exit_BANG_.call(null,cljs.test.successful_QMARK_.call(null,m))
 }));
 doo.runner.run_BANG_ = (function doo$runner$run_BANG_(a){
 try{return cljs.core._STAR_main_cli_fn_STAR_.call(null,a);
-}catch (e8964){var e = e8964;
+}catch (e7756){var e = e7756;
 cljs.core.println.call(null,"WARNING: doo's init function was not set");
 
 cljs.core.println.call(null,e);
