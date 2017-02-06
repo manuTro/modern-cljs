@@ -1,1 +1,0 @@
-(ns boot.cljs.main7014 (:require adzerk.boot-cljs-repl adzerk.boot-reload clj-test.suite modern-cljs.login modern-cljs.login.validators modern-cljs.shopping modern-cljs.shopping.validators modern-cljs.shopping.validators-test))
