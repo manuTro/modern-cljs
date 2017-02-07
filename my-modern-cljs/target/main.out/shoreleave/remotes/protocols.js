@@ -11,14 +11,14 @@ shoreleave.remotes.protocols._data_str = (function shoreleave$remotes$protocols$
 if((!((t == null))) && (!((t.shoreleave$remotes$protocols$ITransportData$_data_str$arity$1 == null)))){
 return t.shoreleave$remotes$protocols$ITransportData$_data_str$arity$1(t);
 } else {
-var x__5644__auto__ = (((t == null))?null:t);
-var m__5645__auto__ = (shoreleave.remotes.protocols._data_str[goog.typeOf(x__5644__auto__)]);
-if(!((m__5645__auto__ == null))){
-return m__5645__auto__.call(null,t);
+var x__5643__auto__ = (((t == null))?null:t);
+var m__5644__auto__ = (shoreleave.remotes.protocols._data_str[goog.typeOf(x__5643__auto__)]);
+if(!((m__5644__auto__ == null))){
+return m__5644__auto__.call(null,t);
 } else {
-var m__5645__auto____$1 = (shoreleave.remotes.protocols._data_str["_"]);
-if(!((m__5645__auto____$1 == null))){
-return m__5645__auto____$1.call(null,t);
+var m__5644__auto____$1 = (shoreleave.remotes.protocols._data_str["_"]);
+if(!((m__5644__auto____$1 == null))){
+return m__5644__auto____$1.call(null,t);
 } else {
 throw cljs.core.missing_protocol.call(null,"ITransportData.-data-str",t);
 }

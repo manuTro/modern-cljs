@@ -31,9 +31,9 @@ if(typeof route === 'string'){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, ["GET",route], null);
 } else {
 if(cljs.core.vector_QMARK_.call(null,route)){
-var vec__8481 = route;
-var m = cljs.core.nth.call(null,vec__8481,(0),null);
-var u = cljs.core.nth.call(null,vec__8481,(1),null);
+var vec__8494 = route;
+var m = cljs.core.nth.call(null,vec__8494,(0),null);
+var u = cljs.core.nth.call(null,vec__8494,(1),null);
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [shoreleave.remotes.common.__GT_url_method.call(null,m),u], null);
 } else {
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, ["GET",route], null);
@@ -62,11 +62,11 @@ return null;
  *   Content is always sent to the server as a map (that later gets converted accordingly)
  */
 shoreleave.remotes.common.csrf_protected = (function shoreleave$remotes$common$csrf_protected(content_map,method){
-var temp__4423__auto__ = (function (){var and__4977__auto__ = cljs.core._EQ_.call(null,method,"POST");
-if(and__4977__auto__){
+var temp__4423__auto__ = (function (){var and__4976__auto__ = cljs.core._EQ_.call(null,method,"POST");
+if(and__4976__auto__){
 return shoreleave.remotes.common._STAR_csrf_token_name_STAR_.call(null,shoreleave.browser.cookies.cookies);
 } else {
-return and__4977__auto__;
+return and__4976__auto__;
 }
 })();
 if(cljs.core.truth_(temp__4423__auto__)){

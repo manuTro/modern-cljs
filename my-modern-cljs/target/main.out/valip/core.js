@@ -20,23 +20,23 @@ return null;
  * Merge error maps returned by from the validation-on function.
  */
 valip.core.merge_errors = (function valip$core$merge_errors(var_args){
-var args__6054__auto__ = [];
-var len__6047__auto___8697 = arguments.length;
-var i__6048__auto___8698 = (0);
+var args__6053__auto__ = [];
+var len__6046__auto___8710 = arguments.length;
+var i__6047__auto___8711 = (0);
 while(true){
-if((i__6048__auto___8698 < len__6047__auto___8697)){
-args__6054__auto__.push((arguments[i__6048__auto___8698]));
+if((i__6047__auto___8711 < len__6046__auto___8710)){
+args__6053__auto__.push((arguments[i__6047__auto___8711]));
 
-var G__8699 = (i__6048__auto___8698 + (1));
-i__6048__auto___8698 = G__8699;
+var G__8712 = (i__6047__auto___8711 + (1));
+i__6047__auto___8711 = G__8712;
 continue;
 } else {
 }
 break;
 }
 
-var argseq__6055__auto__ = ((((0) < args__6054__auto__.length))?(new cljs.core.IndexedSeq(args__6054__auto__.slice((0)),(0))):null);
-return valip.core.merge_errors.cljs$core$IFn$_invoke$arity$variadic(argseq__6055__auto__);
+var argseq__6054__auto__ = ((((0) < args__6053__auto__.length))?(new cljs.core.IndexedSeq(args__6053__auto__.slice((0)),(0))):null);
+return valip.core.merge_errors.cljs$core$IFn$_invoke$arity$variadic(argseq__6054__auto__);
 });
 
 valip.core.merge_errors.cljs$core$IFn$_invoke$arity$variadic = (function (error_maps){
@@ -45,8 +45,8 @@ return cljs.core.apply.call(null,cljs.core.merge_with,cljs.core.into,error_maps)
 
 valip.core.merge_errors.cljs$lang$maxFixedArity = (0);
 
-valip.core.merge_errors.cljs$lang$applyTo = (function (seq8696){
-return valip.core.merge_errors.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq8696));
+valip.core.merge_errors.cljs$lang$applyTo = (function (seq8709){
+return valip.core.merge_errors.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq8709));
 });
 /**
  * Validate a map of values using the supplied validations. Each validation
@@ -55,23 +55,23 @@ return valip.core.merge_errors.cljs$core$IFn$_invoke$arity$variadic(cljs.core.se
  *   {key [errors]}. If no predicates return false, nil is returned.
  */
 valip.core.validate = (function valip$core$validate(var_args){
-var args__6054__auto__ = [];
-var len__6047__auto___8702 = arguments.length;
-var i__6048__auto___8703 = (0);
+var args__6053__auto__ = [];
+var len__6046__auto___8715 = arguments.length;
+var i__6047__auto___8716 = (0);
 while(true){
-if((i__6048__auto___8703 < len__6047__auto___8702)){
-args__6054__auto__.push((arguments[i__6048__auto___8703]));
+if((i__6047__auto___8716 < len__6046__auto___8715)){
+args__6053__auto__.push((arguments[i__6047__auto___8716]));
 
-var G__8704 = (i__6048__auto___8703 + (1));
-i__6048__auto___8703 = G__8704;
+var G__8717 = (i__6047__auto___8716 + (1));
+i__6047__auto___8716 = G__8717;
 continue;
 } else {
 }
 break;
 }
 
-var argseq__6055__auto__ = ((((1) < args__6054__auto__.length))?(new cljs.core.IndexedSeq(args__6054__auto__.slice((1)),(0))):null);
-return valip.core.validate.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__6055__auto__);
+var argseq__6054__auto__ = ((((1) < args__6053__auto__.length))?(new cljs.core.IndexedSeq(args__6053__auto__.slice((1)),(0))):null);
+return valip.core.validate.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__6054__auto__);
 });
 
 valip.core.validate.cljs$core$IFn$_invoke$arity$variadic = (function (value_map,validations){
@@ -82,10 +82,10 @@ return f.call(null,value_map);
 
 valip.core.validate.cljs$lang$maxFixedArity = (1);
 
-valip.core.validate.cljs$lang$applyTo = (function (seq8700){
-var G__8701 = cljs.core.first.call(null,seq8700);
-var seq8700__$1 = cljs.core.next.call(null,seq8700);
-return valip.core.validate.cljs$core$IFn$_invoke$arity$variadic(G__8701,seq8700__$1);
+valip.core.validate.cljs$lang$applyTo = (function (seq8713){
+var G__8714 = cljs.core.first.call(null,seq8713);
+var seq8713__$1 = cljs.core.next.call(null,seq8713);
+return valip.core.validate.cljs$core$IFn$_invoke$arity$variadic(G__8714,seq8713__$1);
 });
 
 //# sourceMappingURL=core.js.map

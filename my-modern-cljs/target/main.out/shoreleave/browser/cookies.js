@@ -8,11 +8,11 @@ goog.net.Cookies.prototype.cljs$core$ITransientAssociative$ = true;
 
 goog.net.Cookies.prototype.cljs$core$ITransientAssociative$_assoc_BANG_$arity$3 = (function (c,k,v){
 var c__$1 = this;
-var temp__4425__auto__ = (function (){var and__4977__auto__ = c__$1.isValidName(cljs.core.name.call(null,k));
-if(cljs.core.truth_(and__4977__auto__)){
+var temp__4425__auto__ = (function (){var and__4976__auto__ = c__$1.isValidName(cljs.core.name.call(null,k));
+if(cljs.core.truth_(and__4976__auto__)){
 return cljs.core.name.call(null,k);
 } else {
-return and__4977__auto__;
+return and__4976__auto__;
 }
 })();
 if(cljs.core.truth_(temp__4425__auto__)){
@@ -44,11 +44,11 @@ goog.net.Cookies.prototype.cljs$core$ITransientMap$ = true;
 
 goog.net.Cookies.prototype.cljs$core$ITransientMap$_dissoc_BANG_$arity$2 = (function (c,k){
 var c__$1 = this;
-var temp__4425__auto__ = (function (){var and__4977__auto__ = c__$1.isValidName(cljs.core.name.call(null,k));
-if(cljs.core.truth_(and__4977__auto__)){
+var temp__4425__auto__ = (function (){var and__4976__auto__ = c__$1.isValidName(cljs.core.name.call(null,k));
+if(cljs.core.truth_(and__4976__auto__)){
 return cljs.core.name.call(null,k);
 } else {
-return and__4977__auto__;
+return and__4976__auto__;
 }
 })();
 if(cljs.core.truth_(temp__4425__auto__)){
@@ -109,35 +109,35 @@ return cljs.core.map.call(null,cljs.core.vector,c__$1.getKeys(),c__$1.getValues(
 goog.net.Cookies.prototype.cljs$core$IFn$ = true;
 
 goog.net.Cookies.prototype.call = (function() {
-var G__8463 = null;
-var G__8463__2 = (function (self__,k){
+var G__8476 = null;
+var G__8476__2 = (function (self__,k){
 var self____$1 = this;
 var c = self____$1;
 return cljs.core._lookup.call(null,c,k);
 });
-var G__8463__3 = (function (self__,k,not_found){
+var G__8476__3 = (function (self__,k,not_found){
 var self____$1 = this;
 var c = self____$1;
 return cljs.core._lookup.call(null,c,k,not_found);
 });
-G__8463 = function(self__,k,not_found){
+G__8476 = function(self__,k,not_found){
 switch(arguments.length){
 case 2:
-return G__8463__2.call(this,self__,k);
+return G__8476__2.call(this,self__,k);
 case 3:
-return G__8463__3.call(this,self__,k,not_found);
+return G__8476__3.call(this,self__,k,not_found);
 }
 throw(new Error('Invalid arity: ' + arguments.length));
 };
-G__8463.cljs$core$IFn$_invoke$arity$2 = G__8463__2;
-G__8463.cljs$core$IFn$_invoke$arity$3 = G__8463__3;
-return G__8463;
+G__8476.cljs$core$IFn$_invoke$arity$2 = G__8476__2;
+G__8476.cljs$core$IFn$_invoke$arity$3 = G__8476__3;
+return G__8476;
 })()
 ;
 
-goog.net.Cookies.prototype.apply = (function (self__,args8462){
+goog.net.Cookies.prototype.apply = (function (self__,args8475){
 var self____$1 = this;
-return self____$1.call.apply(self____$1,[self____$1].concat(cljs.core.aclone.call(null,args8462)));
+return self____$1.call.apply(self____$1,[self____$1].concat(cljs.core.aclone.call(null,args8475)));
 });
 
 goog.net.Cookies.prototype.cljs$core$IFn$_invoke$arity$1 = (function (k){
@@ -151,23 +151,23 @@ return cljs.core._lookup.call(null,c,k,not_found);
 });
 shoreleave.browser.cookies.cookies = (new goog.net.Cookies(document));
 shoreleave.browser.cookies.as_hash_map = (function shoreleave$browser$cookies$as_hash_map(var_args){
-var args8464 = [];
-var len__6047__auto___8467 = arguments.length;
-var i__6048__auto___8468 = (0);
+var args8477 = [];
+var len__6046__auto___8480 = arguments.length;
+var i__6047__auto___8481 = (0);
 while(true){
-if((i__6048__auto___8468 < len__6047__auto___8467)){
-args8464.push((arguments[i__6048__auto___8468]));
+if((i__6047__auto___8481 < len__6046__auto___8480)){
+args8477.push((arguments[i__6047__auto___8481]));
 
-var G__8469 = (i__6048__auto___8468 + (1));
-i__6048__auto___8468 = G__8469;
+var G__8482 = (i__6047__auto___8481 + (1));
+i__6047__auto___8481 = G__8482;
 continue;
 } else {
 }
 break;
 }
 
-var G__8466 = args8464.length;
-switch (G__8466) {
+var G__8479 = args8477.length;
+switch (G__8479) {
 case 0:
 return shoreleave.browser.cookies.as_hash_map.cljs$core$IFn$_invoke$arity$0();
 
@@ -177,7 +177,7 @@ return shoreleave.browser.cookies.as_hash_map.cljs$core$IFn$_invoke$arity$1((arg
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args8464.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args8477.length)].join('')));
 
 }
 });
@@ -195,23 +195,23 @@ shoreleave.browser.cookies.as_hash_map.cljs$lang$maxFixedArity = 1;
  * Returns a boolean, true if cookies are currently enabled for the browser
  */
 shoreleave.browser.cookies.cookies_enabled_QMARK_ = (function shoreleave$browser$cookies$cookies_enabled_QMARK_(var_args){
-var args8471 = [];
-var len__6047__auto___8474 = arguments.length;
-var i__6048__auto___8475 = (0);
+var args8484 = [];
+var len__6046__auto___8487 = arguments.length;
+var i__6047__auto___8488 = (0);
 while(true){
-if((i__6048__auto___8475 < len__6047__auto___8474)){
-args8471.push((arguments[i__6048__auto___8475]));
+if((i__6047__auto___8488 < len__6046__auto___8487)){
+args8484.push((arguments[i__6047__auto___8488]));
 
-var G__8476 = (i__6048__auto___8475 + (1));
-i__6048__auto___8475 = G__8476;
+var G__8489 = (i__6047__auto___8488 + (1));
+i__6047__auto___8488 = G__8489;
 continue;
 } else {
 }
 break;
 }
 
-var G__8473 = args8471.length;
-switch (G__8473) {
+var G__8486 = args8484.length;
+switch (G__8486) {
 case 0:
 return shoreleave.browser.cookies.cookies_enabled_QMARK_.cljs$core$IFn$_invoke$arity$0();
 
@@ -221,7 +221,7 @@ return shoreleave.browser.cookies.cookies_enabled_QMARK_.cljs$core$IFn$_invoke$a
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args8471.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args8484.length)].join('')));
 
 }
 });

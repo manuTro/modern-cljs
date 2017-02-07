@@ -22,33 +22,33 @@ throw (new Error([cljs.core.str("Assert failed: "),cljs.core.str(cljs.core.pr_st
 
 var rules__$1 = cljs.core.partition.call(null,(2),rules);
 var render_rule = ((function (rules__$1){
-return (function (p__7761){
-var vec__7762 = p__7761;
-var attr = cljs.core.nth.call(null,vec__7762,(0),null);
-var v = cljs.core.nth.call(null,vec__7762,(1),null);
+return (function (p__8275){
+var vec__8276 = p__8275;
+var attr = cljs.core.nth.call(null,vec__8276,(0),null);
+var v = cljs.core.nth.call(null,vec__8276,(1),null);
 return [cljs.core.str(cljs.core.name.call(null,attr)),cljs.core.str(":"),cljs.core.str(v),cljs.core.str(";")].join('');
 });})(rules__$1))
 ;
 return cljs.core.apply.call(null,cljs.core.str,cljs.core.map.call(null,render_rule,rules__$1));
 });
 adzerk.boot_reload.display.mk_node = (function adzerk$boot_reload$display$mk_node(var_args){
-var args7763 = [];
-var len__6047__auto___7766 = arguments.length;
-var i__6048__auto___7767 = (0);
+var args8277 = [];
+var len__6046__auto___8280 = arguments.length;
+var i__6047__auto___8281 = (0);
 while(true){
-if((i__6048__auto___7767 < len__6047__auto___7766)){
-args7763.push((arguments[i__6048__auto___7767]));
+if((i__6047__auto___8281 < len__6046__auto___8280)){
+args8277.push((arguments[i__6047__auto___8281]));
 
-var G__7768 = (i__6048__auto___7767 + (1));
-i__6048__auto___7767 = G__7768;
+var G__8282 = (i__6047__auto___8281 + (1));
+i__6047__auto___8281 = G__8282;
 continue;
 } else {
 }
 break;
 }
 
-var G__7765 = args7763.length;
-switch (G__7765) {
+var G__8279 = args8277.length;
+switch (G__8279) {
 case 1:
 return adzerk.boot_reload.display.mk_node.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -62,7 +62,7 @@ return adzerk.boot_reload.display.mk_node.cljs$core$IFn$_invoke$arity$3((argumen
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args7763.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args8277.length)].join('')));
 
 }
 });
@@ -81,23 +81,23 @@ return goog.dom.createDom(cljs.core.name.call(null,type),cljs.core.clj__GT_js.ca
 
 adzerk.boot_reload.display.mk_node.cljs$lang$maxFixedArity = 3;
 adzerk.boot_reload.display.style = (function adzerk$boot_reload$display$style(var_args){
-var args__6054__auto__ = [];
-var len__6047__auto___7771 = arguments.length;
-var i__6048__auto___7772 = (0);
+var args__6053__auto__ = [];
+var len__6046__auto___8285 = arguments.length;
+var i__6047__auto___8286 = (0);
 while(true){
-if((i__6048__auto___7772 < len__6047__auto___7771)){
-args__6054__auto__.push((arguments[i__6048__auto___7772]));
+if((i__6047__auto___8286 < len__6046__auto___8285)){
+args__6053__auto__.push((arguments[i__6047__auto___8286]));
 
-var G__7773 = (i__6048__auto___7772 + (1));
-i__6048__auto___7772 = G__7773;
+var G__8287 = (i__6047__auto___8286 + (1));
+i__6047__auto___8286 = G__8287;
 continue;
 } else {
 }
 break;
 }
 
-var argseq__6055__auto__ = ((((0) < args__6054__auto__.length))?(new cljs.core.IndexedSeq(args__6054__auto__.slice((0)),(0))):null);
-return adzerk.boot_reload.display.style.cljs$core$IFn$_invoke$arity$variadic(argseq__6055__auto__);
+var argseq__6054__auto__ = ((((0) < args__6053__auto__.length))?(new cljs.core.IndexedSeq(args__6053__auto__.slice((0)),(0))):null);
+return adzerk.boot_reload.display.style.cljs$core$IFn$_invoke$arity$variadic(argseq__6054__auto__);
 });
 
 adzerk.boot_reload.display.style.cljs$core$IFn$_invoke$arity$variadic = (function (types){
@@ -107,43 +107,43 @@ return new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"st
 
 adzerk.boot_reload.display.style.cljs$lang$maxFixedArity = (0);
 
-adzerk.boot_reload.display.style.cljs$lang$applyTo = (function (seq7770){
-return adzerk.boot_reload.display.style.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq7770));
+adzerk.boot_reload.display.style.cljs$lang$applyTo = (function (seq8284){
+return adzerk.boot_reload.display.style.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq8284));
 });
 adzerk.boot_reload.display.open_file = (function adzerk$boot_reload$display$open_file(data){
 return adzerk.boot_reload.connection.send_message_BANG_.call(null,cljs.core.merge.call(null,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"open-file","open-file",-895422430)], null),cljs.core.select_keys.call(null,data,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"file","file",-1269645878),new cljs.core.Keyword(null,"line","line",212345235),new cljs.core.Keyword(null,"column","column",2078222095)], null))));
 });
-adzerk.boot_reload.display.exception_node = (function adzerk$boot_reload$display$exception_node(p__7774){
-var map__7778 = p__7774;
-var map__7778__$1 = ((((!((map__7778 == null)))?((((map__7778.cljs$lang$protocol_mask$partition0$ & (64))) || (map__7778.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__7778):map__7778);
-var data = map__7778__$1;
-var message = cljs.core.get.call(null,map__7778__$1,new cljs.core.Keyword(null,"message","message",-406056002));
-var line = cljs.core.get.call(null,map__7778__$1,new cljs.core.Keyword(null,"line","line",212345235));
-var file = cljs.core.get.call(null,map__7778__$1,new cljs.core.Keyword(null,"file","file",-1269645878));
-var G__7780 = adzerk.boot_reload.display.mk_node.call(null,new cljs.core.Keyword(null,"div","div",1057191632),null,message);
-goog.events.listen(G__7780,goog.events.EventType.CLICK,((function (G__7780,map__7778,map__7778__$1,data,message,line,file){
+adzerk.boot_reload.display.exception_node = (function adzerk$boot_reload$display$exception_node(p__8288){
+var map__8292 = p__8288;
+var map__8292__$1 = ((((!((map__8292 == null)))?((((map__8292.cljs$lang$protocol_mask$partition0$ & (64))) || (map__8292.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__8292):map__8292);
+var data = map__8292__$1;
+var message = cljs.core.get.call(null,map__8292__$1,new cljs.core.Keyword(null,"message","message",-406056002));
+var line = cljs.core.get.call(null,map__8292__$1,new cljs.core.Keyword(null,"line","line",212345235));
+var file = cljs.core.get.call(null,map__8292__$1,new cljs.core.Keyword(null,"file","file",-1269645878));
+var G__8294 = adzerk.boot_reload.display.mk_node.call(null,new cljs.core.Keyword(null,"div","div",1057191632),null,message);
+goog.events.listen(G__8294,goog.events.EventType.CLICK,((function (G__8294,map__8292,map__8292__$1,data,message,line,file){
 return (function (){
 return adzerk.boot_reload.display.open_file.call(null,data);
-});})(G__7780,map__7778,map__7778__$1,data,message,line,file))
+});})(G__8294,map__8292,map__8292__$1,data,message,line,file))
 );
 
-return G__7780;
+return G__8294;
 });
-adzerk.boot_reload.display.warning_node = (function adzerk$boot_reload$display$warning_node(p__7781){
-var map__7785 = p__7781;
-var map__7785__$1 = ((((!((map__7785 == null)))?((((map__7785.cljs$lang$protocol_mask$partition0$ & (64))) || (map__7785.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__7785):map__7785);
-var data = map__7785__$1;
-var message = cljs.core.get.call(null,map__7785__$1,new cljs.core.Keyword(null,"message","message",-406056002));
-var line = cljs.core.get.call(null,map__7785__$1,new cljs.core.Keyword(null,"line","line",212345235));
-var file = cljs.core.get.call(null,map__7785__$1,new cljs.core.Keyword(null,"file","file",-1269645878));
-var G__7787 = adzerk.boot_reload.display.mk_node.call(null,new cljs.core.Keyword(null,"div","div",1057191632),null,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [adzerk.boot_reload.display.mk_node.call(null,new cljs.core.Keyword(null,"span","span",1394872991),adzerk.boot_reload.display.style.call(null,new cljs.core.Keyword(null,"mr10","mr10",-144509621)),message),adzerk.boot_reload.display.mk_node.call(null,new cljs.core.Keyword(null,"span","span",1394872991),adzerk.boot_reload.display.style.call(null,new cljs.core.Keyword(null,"mr10","mr10",-144509621)),[cljs.core.str("at line "),cljs.core.str(line)].join('')),adzerk.boot_reload.display.mk_node.call(null,new cljs.core.Keyword(null,"span","span",1394872991),adzerk.boot_reload.display.style.call(null,new cljs.core.Keyword(null,"mr10","mr10",-144509621)),file)], null));
-goog.events.listen(G__7787,goog.events.EventType.CLICK,((function (G__7787,map__7785,map__7785__$1,data,message,line,file){
+adzerk.boot_reload.display.warning_node = (function adzerk$boot_reload$display$warning_node(p__8295){
+var map__8299 = p__8295;
+var map__8299__$1 = ((((!((map__8299 == null)))?((((map__8299.cljs$lang$protocol_mask$partition0$ & (64))) || (map__8299.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__8299):map__8299);
+var data = map__8299__$1;
+var message = cljs.core.get.call(null,map__8299__$1,new cljs.core.Keyword(null,"message","message",-406056002));
+var line = cljs.core.get.call(null,map__8299__$1,new cljs.core.Keyword(null,"line","line",212345235));
+var file = cljs.core.get.call(null,map__8299__$1,new cljs.core.Keyword(null,"file","file",-1269645878));
+var G__8301 = adzerk.boot_reload.display.mk_node.call(null,new cljs.core.Keyword(null,"div","div",1057191632),null,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [adzerk.boot_reload.display.mk_node.call(null,new cljs.core.Keyword(null,"span","span",1394872991),adzerk.boot_reload.display.style.call(null,new cljs.core.Keyword(null,"mr10","mr10",-144509621)),message),adzerk.boot_reload.display.mk_node.call(null,new cljs.core.Keyword(null,"span","span",1394872991),adzerk.boot_reload.display.style.call(null,new cljs.core.Keyword(null,"mr10","mr10",-144509621)),[cljs.core.str("at line "),cljs.core.str(line)].join('')),adzerk.boot_reload.display.mk_node.call(null,new cljs.core.Keyword(null,"span","span",1394872991),adzerk.boot_reload.display.style.call(null,new cljs.core.Keyword(null,"mr10","mr10",-144509621)),file)], null));
+goog.events.listen(G__8301,goog.events.EventType.CLICK,((function (G__8301,map__8299,map__8299__$1,data,message,line,file){
 return (function (){
 return adzerk.boot_reload.display.open_file.call(null,data);
-});})(G__7787,map__7785,map__7785__$1,data,message,line,file))
+});})(G__8301,map__8299,map__8299__$1,data,message,line,file))
 );
 
-return G__7787;
+return G__8301;
 });
 adzerk.boot_reload.display.reloaded_node = (function adzerk$boot_reload$display$reloaded_node(){
 return adzerk.boot_reload.display.mk_node.call(null,new cljs.core.Keyword(null,"div","div",1057191632),null,null);
@@ -151,20 +151,20 @@ return adzerk.boot_reload.display.mk_node.call(null,new cljs.core.Keyword(null,"
 adzerk.boot_reload.display.warnings_node = (function adzerk$boot_reload$display$warnings_node(warnings){
 return adzerk.boot_reload.display.mk_node.call(null,new cljs.core.Keyword(null,"div","div",1057191632),null,cljs.core.map.call(null,adzerk.boot_reload.display.warning_node,warnings));
 });
-adzerk.boot_reload.display.construct_hud_node = (function adzerk$boot_reload$display$construct_hud_node(p__7788){
-var map__7792 = p__7788;
-var map__7792__$1 = ((((!((map__7792 == null)))?((((map__7792.cljs$lang$protocol_mask$partition0$ & (64))) || (map__7792.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__7792):map__7792);
-var messages = map__7792__$1;
-var warnings = cljs.core.get.call(null,map__7792__$1,new cljs.core.Keyword(null,"warnings","warnings",-735437651));
-var exception = cljs.core.get.call(null,map__7792__$1,new cljs.core.Keyword(null,"exception","exception",-335277064));
-var G__7794 = adzerk.boot_reload.display.mk_node.call(null,new cljs.core.Keyword(null,"div","div",1057191632),adzerk.boot_reload.display.style.call(null,new cljs.core.Keyword(null,"pad","pad",-36734541),new cljs.core.Keyword(null,"flex","flex",-1425124628),new cljs.core.Keyword(null,"flex-c","flex-c",1898731114),(cljs.core.truth_(exception)?new cljs.core.Keyword(null,"bg-red","bg-red",-1645498040):((cljs.core.seq.call(null,warnings))?new cljs.core.Keyword(null,"bg-yellow","bg-yellow",-1293468429):new cljs.core.Keyword(null,"bg-clear","bg-clear",-673074101)
+adzerk.boot_reload.display.construct_hud_node = (function adzerk$boot_reload$display$construct_hud_node(p__8302){
+var map__8306 = p__8302;
+var map__8306__$1 = ((((!((map__8306 == null)))?((((map__8306.cljs$lang$protocol_mask$partition0$ & (64))) || (map__8306.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__8306):map__8306);
+var messages = map__8306__$1;
+var warnings = cljs.core.get.call(null,map__8306__$1,new cljs.core.Keyword(null,"warnings","warnings",-735437651));
+var exception = cljs.core.get.call(null,map__8306__$1,new cljs.core.Keyword(null,"exception","exception",-335277064));
+var G__8308 = adzerk.boot_reload.display.mk_node.call(null,new cljs.core.Keyword(null,"div","div",1057191632),adzerk.boot_reload.display.style.call(null,new cljs.core.Keyword(null,"pad","pad",-36734541),new cljs.core.Keyword(null,"flex","flex",-1425124628),new cljs.core.Keyword(null,"flex-c","flex-c",1898731114),(cljs.core.truth_(exception)?new cljs.core.Keyword(null,"bg-red","bg-red",-1645498040):((cljs.core.seq.call(null,warnings))?new cljs.core.Keyword(null,"bg-yellow","bg-yellow",-1293468429):new cljs.core.Keyword(null,"bg-clear","bg-clear",-673074101)
 ))));
-goog.dom.append(G__7794,adzerk.boot_reload.display.mk_node.call(null,new cljs.core.Keyword(null,"div","div",1057191632),adzerk.boot_reload.display.style.call(null,new cljs.core.Keyword(null,"logo","logo",1237980263),new cljs.core.Keyword(null,"mr10","mr10",-144509621)),goog.dom.htmlToDocumentFragment(adzerk.boot_reload.display.cljs_logo)));
+goog.dom.append(G__8308,adzerk.boot_reload.display.mk_node.call(null,new cljs.core.Keyword(null,"div","div",1057191632),adzerk.boot_reload.display.style.call(null,new cljs.core.Keyword(null,"logo","logo",1237980263),new cljs.core.Keyword(null,"mr10","mr10",-144509621)),goog.dom.htmlToDocumentFragment(adzerk.boot_reload.display.cljs_logo)));
 
-goog.dom.append(G__7794,(cljs.core.truth_(exception)?adzerk.boot_reload.display.exception_node.call(null,exception):((cljs.core.seq.call(null,warnings))?adzerk.boot_reload.display.warnings_node.call(null,warnings):adzerk.boot_reload.display.reloaded_node.call(null)
+goog.dom.append(G__8308,(cljs.core.truth_(exception)?adzerk.boot_reload.display.exception_node.call(null,exception):((cljs.core.seq.call(null,warnings))?adzerk.boot_reload.display.warnings_node.call(null,warnings):adzerk.boot_reload.display.reloaded_node.call(null)
 )));
 
-return G__7794;
+return G__8308;
 });
 adzerk.boot_reload.display.remove_container_BANG_ = (function adzerk$boot_reload$display$remove_container_BANG_(id){
 var el = goog.dom.getElement(id);
@@ -176,24 +176,24 @@ return goog.dom.removeNode(el);
 });})(el))
 ,adzerk.boot_reload.display.transition_duration);
 });
-adzerk.boot_reload.display.insert_container_BANG_ = (function adzerk$boot_reload$display$insert_container_BANG_(id,p__7795){
-var map__7798 = p__7795;
-var map__7798__$1 = ((((!((map__7798 == null)))?((((map__7798.cljs$lang$protocol_mask$partition0$ & (64))) || (map__7798.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__7798):map__7798);
-var messages = map__7798__$1;
-var warnings = cljs.core.get.call(null,map__7798__$1,new cljs.core.Keyword(null,"warnings","warnings",-735437651));
-var exception = cljs.core.get.call(null,map__7798__$1,new cljs.core.Keyword(null,"exception","exception",-335277064));
+adzerk.boot_reload.display.insert_container_BANG_ = (function adzerk$boot_reload$display$insert_container_BANG_(id,p__8309){
+var map__8312 = p__8309;
+var map__8312__$1 = ((((!((map__8312 == null)))?((((map__8312.cljs$lang$protocol_mask$partition0$ & (64))) || (map__8312.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__8312):map__8312);
+var messages = map__8312__$1;
+var warnings = cljs.core.get.call(null,map__8312__$1,new cljs.core.Keyword(null,"warnings","warnings",-735437651));
+var exception = cljs.core.get.call(null,map__8312__$1,new cljs.core.Keyword(null,"exception","exception",-335277064));
 var hud = adzerk.boot_reload.display.construct_hud_node.call(null,messages);
 var el = adzerk.boot_reload.display.mk_node.call(null,new cljs.core.Keyword(null,"div","div",1057191632),cljs.core.merge.call(null,adzerk.boot_reload.display.style.call(null,new cljs.core.Keyword(null,"container","container",-1736937707),new cljs.core.Keyword(null,"hide","hide",-596913169)),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"id","id",-1388402092),id], null)),hud);
-var show_BANG_ = ((function (hud,el,map__7798,map__7798__$1,messages,warnings,exception){
+var show_BANG_ = ((function (hud,el,map__8312,map__8312__$1,messages,warnings,exception){
 return (function (){
 return goog.dom.setProperties(el,cljs.core.clj__GT_js.call(null,cljs.core.update.call(null,adzerk.boot_reload.display.style.call(null,new cljs.core.Keyword(null,"container","container",-1736937707)),new cljs.core.Keyword(null,"style","style",-496642736),adzerk.boot_reload.display.__GT_css)));
-});})(hud,el,map__7798,map__7798__$1,messages,warnings,exception))
+});})(hud,el,map__8312,map__8312__$1,messages,warnings,exception))
 ;
 var no_prob_QMARK_ = (cljs.core.not.call(null,exception)) && (cljs.core.not.call(null,cljs.core.seq.call(null,warnings)));
-var hide_BANG_ = ((function (hud,el,show_BANG_,no_prob_QMARK_,map__7798,map__7798__$1,messages,warnings,exception){
+var hide_BANG_ = ((function (hud,el,show_BANG_,no_prob_QMARK_,map__8312,map__8312__$1,messages,warnings,exception){
 return (function (){
 return goog.dom.setProperties(el,cljs.core.clj__GT_js.call(null,cljs.core.update.call(null,adzerk.boot_reload.display.style.call(null,new cljs.core.Keyword(null,"container","container",-1736937707),new cljs.core.Keyword(null,"hide","hide",-596913169)),new cljs.core.Keyword(null,"style","style",-496642736),adzerk.boot_reload.display.__GT_css)));
-});})(hud,el,show_BANG_,no_prob_QMARK_,map__7798,map__7798__$1,messages,warnings,exception))
+});})(hud,el,show_BANG_,no_prob_QMARK_,map__8312,map__8312__$1,messages,warnings,exception))
 ;
 goog.dom.appendChild(document.body,el);
 
@@ -216,10 +216,10 @@ adzerk.boot_reload.display.display = (function adzerk$boot_reload$display$displa
 return cljs.core.swap_BANG_.call(null,adzerk.boot_reload.display.current_container,(function (container){
 if(cljs.core.truth_(container)){
 try{adzerk.boot_reload.display.remove_container_BANG_.call(null,container);
-}catch (e7801){if((e7801 instanceof Error)){
-var __7802 = e7801;
+}catch (e8315){if((e8315 instanceof Error)){
+var __8316 = e8315;
 } else {
-throw e7801;
+throw e8315;
 
 }
 }} else {

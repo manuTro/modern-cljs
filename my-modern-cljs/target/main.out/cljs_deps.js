@@ -31,7 +31,8 @@ goog.addDependency("../modern_cljs/login/validators_test.js", ['modern_cljs.logi
 goog.addDependency("../modern_cljs/shopping/validators.js", ['modern_cljs.shopping.validators'], ['valip.core', 'valip.predicates', 'cljs.core']);
 goog.addDependency("../modern_cljs/shopping/validators_test.js", ['modern_cljs.shopping.validators_test'], ['cljs.core', 'modern_cljs.shopping.validators', 'cljs.test']);
 goog.addDependency("../clj_test/suite.js", ['clj_test.suite'], ['doo.runner', 'cljs.core', 'modern_cljs.login.validators_test', 'modern_cljs.shopping.validators_test']);
-goog.addDependency("../modern_cljs/shopping.js", ['modern_cljs.shopping'], ['domina.core', 'hiccups.runtime', 'shoreleave.remotes.http_rpc', 'cljs.core', 'domina.events']);
+goog.addDependency("../domina/css.js", ['domina.css'], ['goog.dom', 'domina.core', 'cljs.core', 'goog.dom.query']);
+goog.addDependency("../modern_cljs/shopping.js", ['modern_cljs.shopping'], ['domina.css', 'domina.core', 'hiccups.runtime', 'shoreleave.remotes.http_rpc', 'cljs.core', 'modern_cljs.shopping.validators', 'domina.events']);
 goog.addDependency("../cljs/repl.js", ['cljs.repl'], ['cljs.core']);
 goog.addDependency("../clojure/browser/repl.js", ['clojure.browser.repl'], ['goog.dom', 'goog.userAgent.product', 'cljs.core', 'goog.object', 'clojure.browser.net', 'cljs.repl', 'goog.array', 'clojure.browser.event']);
 goog.addDependency("../weasel/impls/websocket.js", ['weasel.impls.websocket'], ['cljs.core', 'clojure.browser.net', 'goog.net.WebSocket', 'clojure.browser.event']);

@@ -72,11 +72,11 @@ valip.predicates.alphanumeric_QMARK_ = (function valip$predicates$alphanumeric_Q
 return cljs.core.boolean$.call(null,cljs.core.re_matches.call(null,/[A-Za-z0-9]+/,[cljs.core.str(s)].join('')));
 });
 valip.predicates.parse_number = (function valip$predicates$parse_number(x){
-if(cljs.core.truth_((function (){var and__4977__auto__ = typeof x === 'string';
-if(and__4977__auto__){
+if(cljs.core.truth_((function (){var and__4976__auto__ = typeof x === 'string';
+if(and__4976__auto__){
 return cljs.core.re_matches.call(null,/\s*[+-]?\d+(\.\d+M|M|N)?\s*/,x);
 } else {
-return and__4977__auto__;
+return and__4976__auto__;
 }
 })())){
 return cljs.reader.read_string.call(null,x);
@@ -177,11 +177,11 @@ return null;
 });
 valip.predicates.url_QMARK_ = (function valip$predicates$url_QMARK_(s){
 var uri = goog.Uri.parse([cljs.core.str(s)].join(''));
-var and__4977__auto__ = cljs.core.seq.call(null,uri.getScheme());
-if(and__4977__auto__){
+var and__4976__auto__ = cljs.core.seq.call(null,uri.getScheme());
+if(and__4976__auto__){
 return cljs.core.re_find.call(null,/\/\//,[cljs.core.str(s)].join(''));
 } else {
-return and__4977__auto__;
+return and__4976__auto__;
 }
 });
 
