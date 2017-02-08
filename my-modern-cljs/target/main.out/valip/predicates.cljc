@@ -2,17 +2,33 @@
   "Predicates useful for validating input strings, such as ones from HTML forms."
   #?(:clj (:require [clojure.string :as str]
                     [clojure.edn :refer [read-string]]
-                    [valip.macros :refer [defpredicate]])
+                    [valip.predicates.def :refer [defpredicate]])
      :cljs (:require [clojure.string :as str]
                      [cljs.reader :refer [read-string]]))
   #?(:clj (:refer-clojure :exclude [read-string])
-     :cljs (:require-macros [valip.macros :refer [defpredicate]]))
+     :cljs (:require-macros [valip.predicates.def :refer [defpredicate]]))
   #?(:clj (:import (java.net URI URISyntaxException)
                    java.util.Hashtable
                    javax.naming.NamingException
                    javax.naming.directory.InitialDirContext)
      :cljs (:import goog.Uri)))
 
+;;;;;;;;;;;;;;;;;; forth oprion. on the tutorial there is a mistake.;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;; there is valip.macros instead of valip.predicates.def;;;;;;;;;;;;;;;;;;;;;
+; (ns valip.predicates
+;   "Predicates useful for validating input strings, such as ones from HTML forms."
+;   #?(:clj (:require [clojure.string :as str]
+;                     [clojure.edn :refer [read-string]]
+;                     [valip.predicates.def :refer [defpredicate]])
+;      :cljs (:require [clojure.string :as str]
+;                      [cljs.reader :refer [read-string]]
+;                      [goog.Uri :as guri])) ;; as a namespace
+;   #?(:clj (:refer-clojure :exclude [read-string])
+;      :cljs (:require-macros [valip.predicates.def :refer [defpredicate]]))
+;   #?(:clj (:import (java.net URI URISyntaxException)
+;                    java.util.Hashtable
+;                    javax.naming.NamingException
+;                    javax.naming.directory.InitialDirContext)))
 (defn present?
   "Returns false if x is nil or blank, true otherwise."
   [x]
@@ -66,7 +82,7 @@
 (defn alphanumeric?
   "Returns true if a string consists only of alphanumeric characters."
   [s]
-  (boolean (re-matches #"[A-Za-z0-9]+" (str s))))
+  (boolean (re-matches #"[A-Za-z0-9]+" s)))
 
 (defn- parse-number [x]
   (if (and (string? x) (re-matches #"\s*[+-]?\d+(\.\d+M|M|N)?\s*" x))
@@ -112,21 +128,22 @@
     (if-let [x (parse-number x)]
       (and (>= x min) (<= x max)))))
 
-#?(:clj (defn url?
-          "Returns true if the string is a valid URL."
-          [s]
-          (try
-            (let [uri (URI. (str s))]
+      #?(:clj (defn url?
+                "Returns true if the string is a valid URL."
+                [s]
+                (try
+                  (let [uri (URI. (str s))]      ; wrap within str
+                    (and (seq (.getScheme uri))
+                         (seq (.getSchemeSpecificPart uri))
+                         (re-find #"//" (str s)) ; wrap within str
+                         true))
+                  (catch URISyntaxException _ false)))
+          :cljs (defn url?
+            [s]
+            (let [uri (goog.Uri.parse (str s))]
               (and (seq (.getScheme uri))
-                   (seq (.getSchemeSpecificPart uri))
-                   (re-find #"//" (str s))
-                   true))
-            (catch URISyntaxException _ false)))
-   :cljs (defn url?
-           [s]
-           (let [uri (goog.Uri.parse (str s))]
-             (and (seq (.getScheme uri))
-                  (re-find #"//" (str s))))))
+                   ;; (seq (.getSchemeSpecificPart uri))
+                   (re-find #"//" (str s))))))
 
 #?(:clj (defn- dns-lookup [^String hostname ^String type]
           (let [params {"java.naming.factory.initial"

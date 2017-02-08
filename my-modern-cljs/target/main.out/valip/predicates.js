@@ -69,7 +69,7 @@ return cljs.core.boolean$.call(null,cljs.core.re_matches.call(null,/\d+/,[cljs.c
  * Returns true if a string consists only of alphanumeric characters.
  */
 valip.predicates.alphanumeric_QMARK_ = (function valip$predicates$alphanumeric_QMARK_(s){
-return cljs.core.boolean$.call(null,cljs.core.re_matches.call(null,/[A-Za-z0-9]+/,[cljs.core.str(s)].join('')));
+return cljs.core.boolean$.call(null,cljs.core.re_matches.call(null,/[A-Za-z0-9]+/,s));
 });
 valip.predicates.parse_number = (function valip$predicates$parse_number(x){
 if(cljs.core.truth_((function (){var and__4976__auto__ = typeof x === 'string';
