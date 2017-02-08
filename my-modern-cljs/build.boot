@@ -1,26 +1,26 @@
 (set-env!
  :source-paths #{"src/clj" "src/cljs" "src/cljc"}
  :resource-paths #{"html"}
- :dependencies '[ [org.clojure/clojure                 "1.7.0"]            ; add CLJ
-                  [org.clojure/clojurescript           "1.7.170"]          ; add CLJS
-                  [org.clojure/tools.nrepl             "0.2.12"]           ; needed by bREPL
-                  [adzerk/boot-cljs                    "1.7.170-3"]
-                  [adzerk/boot-test                    "1.0.7"]
-                  [adzerk/boot-reload                  "0.4.2"]
-                  [adzerk/boot-cljs-repl               "0.3.0"]            ; add bREPL
-                  [com.cemerick/piggieback             "0.2.1"]            ; needed by bREPL
-                  [compojure                           "1.4.0"]            ; for routing
-                  [crisptrutski/boot-cljs-test         "0.2.1-SNAPSHOT"]
-                  [enlive                              "1.1.6"]
-                  [hiccups                             "0.3.0"]
-                  [javax.servlet/servlet-api           "2.5"]
-                  [pandeiro/boot-http                  "0.7.0"]
-                  [weasel                              "0.7.0"]            ; needed by bREPL
-
-                  [org.clojars.magomimmo/domina                     "2.0.0-SNAPSHOT"]
-                  [org.clojars.magomimmo/shoreleave-remote          "0.3.1"]
-                  [org.clojars.manuTro/valip                      "0.4.0-SNAPSHOT"]
-                  [org.clojars.magomimmo/shoreleave-remote-ring     "0.3.1"]])
+ :dependencies '[ [org.clojure/clojure "1.7.0"]            ; add CLJ
+                  [org.clojure/clojurescript "1.7.170"]          ; add CLJS
+                  [org.clojure/tools.nrepl "0.2.12"]           ; needed by bREPL
+                  [adzerk/boot-cljs "1.7.170-3"]
+                  [adzerk/boot-test "1.0.7"]
+                  [adzerk/boot-reload "0.4.2"]
+                  [adzerk/boot-cljs-repl "0.3.0"]            ; add bREPL
+                  [com.cemerick/piggieback "0.2.1"]            ; needed by bREPL
+                  [compojure "1.4.0"]            ; for routing
+                  [crisptrutski/boot-cljs-test "0.2.1-SNAPSHOT"]
+                  [enlive "1.1.6"]
+                  [hiccups "0.3.0"]
+                  [javax.servlet/servlet-api "2.5"]
+                  [pandeiro/boot-http "0.7.0"]
+                  [weasel "0.7.0"]            ; needed by bREPL
+                  [org.clojars.magomimmo/domina "2.0.0-SNAPSHOT"]
+                  [org.clojars.magomimmo/shoreleave-remote "0.3.1"]
+                  ;[adzerk/bootlaces "0.1.13"]
+                  [org.clojars.manutro/valip "0.4.0-SNAPSHOT"]
+                  [org.clojars.magomimmo/shoreleave-remote-ring "0.3.1"]])
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (require '[adzerk.boot-cljs               :refer [cljs]]
@@ -28,7 +28,8 @@
          '[adzerk.boot-cljs-repl          :refer [cljs-repl start-repl]]
          '[adzerk.boot-test               :refer [test]]
          '[crisptrutski.boot-cljs-test    :refer [test-cljs]]
-         '[pandeiro.boot-http             :refer [serve]] )
+         '[pandeiro.boot-http             :refer [serve]]
+         ;'[adzerk.bootlaces :refer [bootlaces! build-jar push-snapshot]] )
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (def defaults {:test-dirs #{"test/cljc" "test/clj" "test/cljs"}
                :output-to "main.js"
