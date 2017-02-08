@@ -28,8 +28,8 @@
          '[adzerk.boot-cljs-repl          :refer [cljs-repl start-repl]]
          '[adzerk.boot-test               :refer [test]]
          '[crisptrutski.boot-cljs-test    :refer [test-cljs]]
-         '[pandeiro.boot-http             :refer [serve]]
-         ;'[adzerk.bootlaces :refer [bootlaces! build-jar push-snapshot]] )
+         '[pandeiro.boot-http             :refer [serve]])
+         ;'[adzerk.bootlaces :refer [bootlaces! build-jar push-snapshot]] 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (def defaults {:test-dirs #{"test/cljc" "test/clj" "test/cljs"}
                :output-to "main.js"
