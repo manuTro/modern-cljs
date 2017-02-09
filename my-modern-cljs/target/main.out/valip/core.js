@@ -21,14 +21,14 @@ return null;
  */
 valip.core.merge_errors = (function valip$core$merge_errors(var_args){
 var args__6053__auto__ = [];
-var len__6046__auto___8710 = arguments.length;
-var i__6047__auto___8711 = (0);
+var len__6046__auto___7773 = arguments.length;
+var i__6047__auto___7774 = (0);
 while(true){
-if((i__6047__auto___8711 < len__6046__auto___8710)){
-args__6053__auto__.push((arguments[i__6047__auto___8711]));
+if((i__6047__auto___7774 < len__6046__auto___7773)){
+args__6053__auto__.push((arguments[i__6047__auto___7774]));
 
-var G__8712 = (i__6047__auto___8711 + (1));
-i__6047__auto___8711 = G__8712;
+var G__7775 = (i__6047__auto___7774 + (1));
+i__6047__auto___7774 = G__7775;
 continue;
 } else {
 }
@@ -45,8 +45,8 @@ return cljs.core.apply.call(null,cljs.core.merge_with,cljs.core.into,error_maps)
 
 valip.core.merge_errors.cljs$lang$maxFixedArity = (0);
 
-valip.core.merge_errors.cljs$lang$applyTo = (function (seq8709){
-return valip.core.merge_errors.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq8709));
+valip.core.merge_errors.cljs$lang$applyTo = (function (seq7772){
+return valip.core.merge_errors.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq7772));
 });
 /**
  * Validate a map of values using the supplied validations. Each validation
@@ -56,14 +56,14 @@ return valip.core.merge_errors.cljs$core$IFn$_invoke$arity$variadic(cljs.core.se
  */
 valip.core.validate = (function valip$core$validate(var_args){
 var args__6053__auto__ = [];
-var len__6046__auto___8715 = arguments.length;
-var i__6047__auto___8716 = (0);
+var len__6046__auto___7778 = arguments.length;
+var i__6047__auto___7779 = (0);
 while(true){
-if((i__6047__auto___8716 < len__6046__auto___8715)){
-args__6053__auto__.push((arguments[i__6047__auto___8716]));
+if((i__6047__auto___7779 < len__6046__auto___7778)){
+args__6053__auto__.push((arguments[i__6047__auto___7779]));
 
-var G__8717 = (i__6047__auto___8716 + (1));
-i__6047__auto___8716 = G__8717;
+var G__7780 = (i__6047__auto___7779 + (1));
+i__6047__auto___7779 = G__7780;
 continue;
 } else {
 }
@@ -82,10 +82,10 @@ return f.call(null,value_map);
 
 valip.core.validate.cljs$lang$maxFixedArity = (1);
 
-valip.core.validate.cljs$lang$applyTo = (function (seq8713){
-var G__8714 = cljs.core.first.call(null,seq8713);
-var seq8713__$1 = cljs.core.next.call(null,seq8713);
-return valip.core.validate.cljs$core$IFn$_invoke$arity$variadic(G__8714,seq8713__$1);
+valip.core.validate.cljs$lang$applyTo = (function (seq7776){
+var G__7777 = cljs.core.first.call(null,seq7776);
+var seq7776__$1 = cljs.core.next.call(null,seq7776);
+return valip.core.validate.cljs$core$IFn$_invoke$arity$variadic(G__7777,seq7776__$1);
 });
 
 //# sourceMappingURL=core.js.map

@@ -34,10 +34,10 @@ return new cljs.core.Keyword(null,"type","type",1174270348).cljs$core$IFn$_invok
 ,new cljs.core.Keyword(null,"default","default",-1987822328),hierarchy__5905__auto__,method_table__5901__auto__,prefer_table__5902__auto__,method_cache__5903__auto__,cached_hierarchy__5904__auto__));
 })();
 }
-cljs.core._add_method.call(null,adzerk.boot_reload.client.handle,new cljs.core.Keyword(null,"reload","reload",863702807),(function (p__8445,opts){
-var map__8446 = p__8445;
-var map__8446__$1 = ((((!((map__8446 == null)))?((((map__8446.cljs$lang$protocol_mask$partition0$ & (64))) || (map__8446.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__8446):map__8446);
-var files = cljs.core.get.call(null,map__8446__$1,new cljs.core.Keyword(null,"files","files",-472457450));
+cljs.core._add_method.call(null,adzerk.boot_reload.client.handle,new cljs.core.Keyword(null,"reload","reload",863702807),(function (p__7508,opts){
+var map__7509 = p__7508;
+var map__7509__$1 = ((((!((map__7509 == null)))?((((map__7509.cljs$lang$protocol_mask$partition0$ & (64))) || (map__7509.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__7509):map__7509);
+var files = cljs.core.get.call(null,map__7509__$1,new cljs.core.Keyword(null,"files","files",-472457450));
 return adzerk.boot_reload.reload.reload.call(null,files,opts);
 }));
 cljs.core._add_method.call(null,adzerk.boot_reload.client.handle,new cljs.core.Keyword(null,"visual","visual",942787224),(function (state,opts){
@@ -45,14 +45,14 @@ return adzerk.boot_reload.display.display.call(null,state,opts);
 }));
 adzerk.boot_reload.client.connect = (function adzerk$boot_reload$client$connect(var_args){
 var args__6053__auto__ = [];
-var len__6046__auto___8452 = arguments.length;
-var i__6047__auto___8453 = (0);
+var len__6046__auto___7515 = arguments.length;
+var i__6047__auto___7516 = (0);
 while(true){
-if((i__6047__auto___8453 < len__6046__auto___8452)){
-args__6053__auto__.push((arguments[i__6047__auto___8453]));
+if((i__6047__auto___7516 < len__6046__auto___7515)){
+args__6053__auto__.push((arguments[i__6047__auto___7516]));
 
-var G__8454 = (i__6047__auto___8453 + (1));
-i__6047__auto___8453 = G__8454;
+var G__7517 = (i__6047__auto___7516 + (1));
+i__6047__auto___7516 = G__7517;
 continue;
 } else {
 }
@@ -63,9 +63,9 @@ var argseq__6054__auto__ = ((((1) < args__6053__auto__.length))?(new cljs.core.I
 return adzerk.boot_reload.client.connect.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__6054__auto__);
 });
 
-adzerk.boot_reload.client.connect.cljs$core$IFn$_invoke$arity$variadic = (function (url,p__8450){
-var vec__8451 = p__8450;
-var opts = cljs.core.nth.call(null,vec__8451,(0),null);
+adzerk.boot_reload.client.connect.cljs$core$IFn$_invoke$arity$variadic = (function (url,p__7513){
+var vec__7514 = p__7513;
+var opts = cljs.core.nth.call(null,vec__7514,(0),null);
 if(cljs.core.truth_(adzerk.boot_reload.connection.alive_QMARK_.call(null))){
 return null;
 } else {
@@ -74,33 +74,33 @@ adzerk.boot_reload.client.patch_goog_base_BANG_.call(null);
 
 cljs.core.reset_BANG_.call(null,adzerk.boot_reload.connection.ws_conn,conn);
 
-clojure.browser.event.listen.call(null,conn,new cljs.core.Keyword(null,"opened","opened",-1451743091),((function (conn,vec__8451,opts){
+clojure.browser.event.listen.call(null,conn,new cljs.core.Keyword(null,"opened","opened",-1451743091),((function (conn,vec__7514,opts){
 return (function (evt){
 adzerk.boot_reload.connection.send_message_BANG_.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"set-protocol","set-protocol",1849530943),new cljs.core.Keyword(null,"protocol","protocol",652470118),window.location.protocol], null));
 
 return console.info("Reload websocket connected.");
-});})(conn,vec__8451,opts))
+});})(conn,vec__7514,opts))
 );
 
-clojure.browser.event.listen.call(null,conn,new cljs.core.Keyword(null,"message","message",-406056002),((function (conn,vec__8451,opts){
+clojure.browser.event.listen.call(null,conn,new cljs.core.Keyword(null,"message","message",-406056002),((function (conn,vec__7514,opts){
 return (function (evt){
 var msg = cljs.reader.read_string.call(null,evt.message);
 return adzerk.boot_reload.client.handle.call(null,msg,opts);
-});})(conn,vec__8451,opts))
+});})(conn,vec__7514,opts))
 );
 
-clojure.browser.event.listen.call(null,conn,new cljs.core.Keyword(null,"closed","closed",-919675359),((function (conn,vec__8451,opts){
+clojure.browser.event.listen.call(null,conn,new cljs.core.Keyword(null,"closed","closed",-919675359),((function (conn,vec__7514,opts){
 return (function (evt){
 cljs.core.reset_BANG_.call(null,adzerk.boot_reload.connection.ws_conn,null);
 
 return console.info("Reload websocket connection closed.");
-});})(conn,vec__8451,opts))
+});})(conn,vec__7514,opts))
 );
 
-clojure.browser.event.listen.call(null,conn,new cljs.core.Keyword(null,"error","error",-978969032),((function (conn,vec__8451,opts){
+clojure.browser.event.listen.call(null,conn,new cljs.core.Keyword(null,"error","error",-978969032),((function (conn,vec__7514,opts){
 return (function (evt){
 return console.error("Reload websocket error:",evt);
-});})(conn,vec__8451,opts))
+});})(conn,vec__7514,opts))
 );
 
 return clojure.browser.net.connect.call(null,conn,url);
@@ -109,10 +109,10 @@ return clojure.browser.net.connect.call(null,conn,url);
 
 adzerk.boot_reload.client.connect.cljs$lang$maxFixedArity = (1);
 
-adzerk.boot_reload.client.connect.cljs$lang$applyTo = (function (seq8448){
-var G__8449 = cljs.core.first.call(null,seq8448);
-var seq8448__$1 = cljs.core.next.call(null,seq8448);
-return adzerk.boot_reload.client.connect.cljs$core$IFn$_invoke$arity$variadic(G__8449,seq8448__$1);
+adzerk.boot_reload.client.connect.cljs$lang$applyTo = (function (seq7511){
+var G__7512 = cljs.core.first.call(null,seq7511);
+var seq7511__$1 = cljs.core.next.call(null,seq7511);
+return adzerk.boot_reload.client.connect.cljs$core$IFn$_invoke$arity$variadic(G__7512,seq7511__$1);
 });
 
 //# sourceMappingURL=client.js.map

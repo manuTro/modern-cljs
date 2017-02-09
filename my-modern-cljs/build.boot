@@ -20,7 +20,10 @@
                   [org.clojars.magomimmo/shoreleave-remote "0.3.1"]
                   ;[adzerk/bootlaces "0.1.13"]
                   [org.clojars.manutro/valip "0.4.0-SNAPSHOT"]
-                  [org.clojars.magomimmo/shoreleave-remote-ring "0.3.1"]])
+                  [org.clojars.magomimmo/shoreleave-remote-ring "0.3.1"]
+                  [reagent "0.6.0-alpha2"]
+                  [cljsjs/marked "0.3.5-0"]])
+                  ; [remarkable "1.7.0"]
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (require '[adzerk.boot-cljs               :refer [cljs]]
@@ -29,7 +32,7 @@
          '[adzerk.boot-test               :refer [test]]
          '[crisptrutski.boot-cljs-test    :refer [test-cljs]]
          '[pandeiro.boot-http             :refer [serve]])
-         ;'[adzerk.bootlaces :refer [bootlaces! build-jar push-snapshot]] 
+         ;'[adzerk.bootlaces :refer [bootlaces! build-jar push-snapshot]]
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (def defaults {:test-dirs #{"test/cljc" "test/clj" "test/cljs"}
                :output-to "main.js"

@@ -13,8 +13,8 @@ var price = domina.core.value.call(null,domina.core.by_id.call(null,"price"));
 var tax = domina.core.value.call(null,domina.core.by_id.call(null,"tax"));
 var discount = domina.core.value.call(null,domina.core.by_id.call(null,"discount"));
 shoreleave.remotes.http_rpc.remote_callback.call(null,new cljs.core.Keyword(null,"calculate","calculate",-1224644403),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [quantity,price,tax,discount], null),((function (quantity,price,tax,discount){
-return (function (p1__9918_SHARP_){
-return domina.core.set_value_BANG_.call(null,domina.core.by_id.call(null,"total"),p1__9918_SHARP_.toFixed((2)));
+return (function (p1__8920_SHARP_){
+return domina.core.set_value_BANG_.call(null,domina.core.by_id.call(null,"total"),p1__8920_SHARP_.toFixed((2)));
 });})(quantity,price,tax,discount))
 );
 
@@ -28,8 +28,8 @@ var discount = domina.core.value.call(null,domina.core.by_id.call(null,"discount
 var errors = modern_cljs.shopping.validators.validate_shopping_form.call(null,quantity,price,tax,discount);
 if(cljs.core.not.call(null,errors)){
 return shoreleave.remotes.http_rpc.remote_callback.call(null,new cljs.core.Keyword(null,"calculate","calculate",-1224644403),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [quantity,price,tax,discount], null),((function (quantity,price,tax,discount,errors){
-return (function (p1__9919_SHARP_){
-return domina.core.set_value_BANG_.call(null,domina.core.by_id.call(null,"total"),p1__9919_SHARP_.toFixed((2)));
+return (function (p1__8921_SHARP_){
+return domina.core.set_value_BANG_.call(null,domina.core.by_id.call(null,"total"),p1__8921_SHARP_.toFixed((2)));
 });})(quantity,price,tax,discount,errors))
 );
 } else {
@@ -63,32 +63,32 @@ return (document["getElementById"]);
 return and__4976__auto__;
 }
 })())){
-var quantity_text_9924 = domina.core.text.call(null,domina.css.sel.call(null,"label[for=quantity]"));
-var price_text_9925 = domina.core.text.call(null,domina.css.sel.call(null,"label[for=price]"));
-var tax_text_9926 = domina.core.text.call(null,domina.css.sel.call(null,"label[for=tax]"));
-var discount_text_9927 = domina.core.text.call(null,domina.css.sel.call(null,"label[for=discount]"));
-domina.events.listen_BANG_.call(null,domina.core.by_id.call(null,"quantity"),new cljs.core.Keyword(null,"input","input",556931961),((function (quantity_text_9924,price_text_9925,tax_text_9926,discount_text_9927){
+var quantity_text_8926 = domina.core.text.call(null,domina.css.sel.call(null,"label[for=quantity]"));
+var price_text_8927 = domina.core.text.call(null,domina.css.sel.call(null,"label[for=price]"));
+var tax_text_8928 = domina.core.text.call(null,domina.css.sel.call(null,"label[for=tax]"));
+var discount_text_8929 = domina.core.text.call(null,domina.css.sel.call(null,"label[for=discount]"));
+domina.events.listen_BANG_.call(null,domina.core.by_id.call(null,"quantity"),new cljs.core.Keyword(null,"input","input",556931961),((function (quantity_text_8926,price_text_8927,tax_text_8928,discount_text_8929){
 return (function (evt){
-return modern_cljs.shopping.validate_shopping_field_BANG_.call(null,evt,new cljs.core.Keyword(null,"quantity","quantity",-1929050694),quantity_text_9924);
-});})(quantity_text_9924,price_text_9925,tax_text_9926,discount_text_9927))
+return modern_cljs.shopping.validate_shopping_field_BANG_.call(null,evt,new cljs.core.Keyword(null,"quantity","quantity",-1929050694),quantity_text_8926);
+});})(quantity_text_8926,price_text_8927,tax_text_8928,discount_text_8929))
 );
 
-domina.events.listen_BANG_.call(null,domina.core.by_id.call(null,"price"),new cljs.core.Keyword(null,"input","input",556931961),((function (quantity_text_9924,price_text_9925,tax_text_9926,discount_text_9927){
+domina.events.listen_BANG_.call(null,domina.core.by_id.call(null,"price"),new cljs.core.Keyword(null,"input","input",556931961),((function (quantity_text_8926,price_text_8927,tax_text_8928,discount_text_8929){
 return (function (evt){
-return modern_cljs.shopping.validate_shopping_field_BANG_.call(null,evt,new cljs.core.Keyword(null,"price","price",22129180),price_text_9925);
-});})(quantity_text_9924,price_text_9925,tax_text_9926,discount_text_9927))
+return modern_cljs.shopping.validate_shopping_field_BANG_.call(null,evt,new cljs.core.Keyword(null,"price","price",22129180),price_text_8927);
+});})(quantity_text_8926,price_text_8927,tax_text_8928,discount_text_8929))
 );
 
-domina.events.listen_BANG_.call(null,domina.core.by_id.call(null,"tax"),new cljs.core.Keyword(null,"input","input",556931961),((function (quantity_text_9924,price_text_9925,tax_text_9926,discount_text_9927){
+domina.events.listen_BANG_.call(null,domina.core.by_id.call(null,"tax"),new cljs.core.Keyword(null,"input","input",556931961),((function (quantity_text_8926,price_text_8927,tax_text_8928,discount_text_8929){
 return (function (evt){
-return modern_cljs.shopping.validate_shopping_field_BANG_.call(null,evt,new cljs.core.Keyword(null,"tax","tax",-226525810),tax_text_9926);
-});})(quantity_text_9924,price_text_9925,tax_text_9926,discount_text_9927))
+return modern_cljs.shopping.validate_shopping_field_BANG_.call(null,evt,new cljs.core.Keyword(null,"tax","tax",-226525810),tax_text_8928);
+});})(quantity_text_8926,price_text_8927,tax_text_8928,discount_text_8929))
 );
 
-domina.events.listen_BANG_.call(null,domina.core.by_id.call(null,"discount"),new cljs.core.Keyword(null,"input","input",556931961),((function (quantity_text_9924,price_text_9925,tax_text_9926,discount_text_9927){
+domina.events.listen_BANG_.call(null,domina.core.by_id.call(null,"discount"),new cljs.core.Keyword(null,"input","input",556931961),((function (quantity_text_8926,price_text_8927,tax_text_8928,discount_text_8929){
 return (function (evt){
-return modern_cljs.shopping.validate_shopping_field_BANG_.call(null,evt,new cljs.core.Keyword(null,"discount","discount",1508820155),discount_text_9927);
-});})(quantity_text_9924,price_text_9925,tax_text_9926,discount_text_9927))
+return modern_cljs.shopping.validate_shopping_field_BANG_.call(null,evt,new cljs.core.Keyword(null,"discount","discount",1508820155),discount_text_8929);
+});})(quantity_text_8926,price_text_8927,tax_text_8928,discount_text_8929))
 );
 
 domina.events.listen_BANG_.call(null,domina.core.by_id.call(null,"calc"),new cljs.core.Keyword(null,"click","click",1912301393),(function (evt){
