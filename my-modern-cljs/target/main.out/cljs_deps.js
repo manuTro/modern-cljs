@@ -39,7 +39,7 @@ goog.addDependency("../react-dom.inc.js", ['cljsjs.react.dom'], ['cljsjs.react']
 goog.addDependency("../reagent/dom.js", ['reagent.dom'], ['reagent.impl.util', 'reagent.interop', 'reagent.ratom', 'cljs.core', 'reagent.impl.template', 'cljsjs.react.dom', 'reagent.debug']);
 goog.addDependency("../reagent/core.js", ['reagent.core'], ['reagent.impl.util', 'reagent.dom.server', 'reagent.interop', 'reagent.ratom', 'cljs.core', 'reagent.impl.template', 'reagent.impl.batching', 'reagent.impl.component', 'reagent.debug', 'reagent.dom']);
 goog.addDependency("../marked.inc.js", ['cljsjs.marked'], []);
-goog.addDependency("../modern_cljs/reagent.js", ['modern_cljs.reagent'], ['reagent.core', 'cljs.core', 'cljsjs.marked']);
+goog.addDependency("../modern_cljs/reagent.js", ['modern_cljs.reagent'], ['domina.core', 'reagent.core', 'cljs.core', 'cljsjs.marked', 'clojure.string']);
 goog.addDependency("../domina/css.js", ['domina.css'], ['goog.dom', 'domina.core', 'cljs.core', 'goog.dom.query']);
 goog.addDependency("../modern_cljs/shopping/validators.js", ['modern_cljs.shopping.validators'], ['valip.core', 'valip.predicates', 'cljs.core']);
 goog.addDependency("../modern_cljs/shopping.js", ['modern_cljs.shopping'], ['domina.css', 'domina.core', 'hiccups.runtime', 'shoreleave.remotes.http_rpc', 'cljs.core', 'modern_cljs.shopping.validators', 'domina.events']);
