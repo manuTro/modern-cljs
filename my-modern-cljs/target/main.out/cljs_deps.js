@@ -48,4 +48,5 @@ goog.addDependency("../clojure/browser/repl.js", ['clojure.browser.repl'], ['goo
 goog.addDependency("../weasel/impls/websocket.js", ['weasel.impls.websocket'], ['cljs.core', 'clojure.browser.net', 'goog.net.WebSocket', 'clojure.browser.event']);
 goog.addDependency("../weasel/repl.js", ['weasel.repl'], ['goog.dom', 'clojure.browser.repl', 'weasel.impls.websocket', 'cljs.core', 'clojure.browser.net', 'cljs.reader', 'clojure.browser.event']);
 goog.addDependency("../adzerk/boot_cljs_repl.js", ['adzerk.boot_cljs_repl'], ['weasel.repl', 'cljs.core']);
-goog.addDependency("../boot/cljs/main7054.js", ['boot.cljs.main7054'], ['adzerk.boot_reload', 'modern_cljs.login', 'modern_cljs.reagent', 'cljs.core', 'modern_cljs.shopping', 'modern_cljs.shopping.validators', 'adzerk.boot_cljs_repl', 'modern_cljs.login.validators']);
+goog.addDependency("../modern_cljs/tic_tac_toe.js", ['modern_cljs.tic_tac_toe'], ['domina.core', 'reagent.core', 'cljs.core']);
+goog.addDependency("../boot/cljs/main7054.js", ['boot.cljs.main7054'], ['adzerk.boot_reload', 'modern_cljs.login', 'modern_cljs.reagent', 'cljs.core', 'modern_cljs.shopping', 'modern_cljs.shopping.validators', 'adzerk.boot_cljs_repl', 'modern_cljs.tic_tac_toe', 'modern_cljs.login.validators']);

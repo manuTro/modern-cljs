@@ -1,2 +1,2 @@
 (ns adzerk.boot-reload (:require [adzerk.boot-reload.client :as client]))
-(client/connect "ws://localhost:40729" {:on-jsload (fn* [] (+))})
+(client/connect "ws://localhost:43173" {:on-jsload (fn* [] (+))})
